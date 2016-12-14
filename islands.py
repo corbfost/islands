@@ -26,8 +26,8 @@ class Grid(object):
         matrix2d = []
         i = 0
         for r in range(0, self.size[0]):
-            matrix2d.append(self.matrix[i:i + self.size[0]])
-            i += self.size[0]
+            matrix2d.append(self.matrix[i:i + self.size[1]])
+            i += self.size[1]
         return matrix2d
 
     def num_islands(self):
