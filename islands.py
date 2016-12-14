@@ -18,9 +18,8 @@ class Grid(object):
 
     def create_matrix(self):
         matrix = []
-        for r in range(0, self.size[0]):
-            for c in range(0, self.size[1]):
-                matrix.append(random.choice([self.land, self.water]))
+        for r in range(0, self.size[0] * self.size[1]):
+            matrix.append(random.choice([self.land, self.water]))
         return matrix
 
     def make2d(self):
